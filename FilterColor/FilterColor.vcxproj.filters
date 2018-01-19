@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="TGMT">
+      <UniqueIdentifier>{8d55defd-3679-42ac-8661-4bd46c09a737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TGMTbridge">
+      <UniqueIdentifier>{f0568f9d-f8e8-4e96-9707-89c84bd6bf26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\TGMTcpp\src\stdafx.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTfile.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTbridge\src\TGMTbridgeUtil.cpp">
+      <Filter>TGMTbridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTbridge\src\TGMTbridgeRegistry.cpp">
+      <Filter>TGMTbridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTbridge\src\TGMTbridge.cpp">
+      <Filter>TGMTbridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTimage.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTdebugger.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="FilterColorForm.cpp" />
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTutil.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTblob.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\TGMTcpp\src\TGMTcolor.cpp">
+      <Filter>TGMT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\TGMTcpp\src\stdafx.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTfile.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTbridge\src\TGMTbridgeUtil.h">
+      <Filter>TGMTbridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTbridge\src\TGMTbridgeRegistry.h">
+      <Filter>TGMTbridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTbridge\src\TGMTbridge.h">
+      <Filter>TGMTbridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTimage.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTdebugger.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterColorForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTutil.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTblob.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\TGMTcpp\src\TGMTcolor.h">
+      <Filter>TGMT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FilterColorForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FilterColor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
