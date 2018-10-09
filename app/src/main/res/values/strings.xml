@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tracking color</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="cua_tieu">Cua tiêu</string>
+    <string name="cua_dua">Cua dưa</string>
+    <string name="cua_me">Cua me</string>
+
+    <string name="select_type">Chọn loại cua</string>
+    <string name="select_size_melon">Chọn kích cỡ cua dưa</string>
+    <string name="select_size_pepper">Chọn kích cỡ cua tiêu</string>
+    <string name="total_crab">Tổng số:</string>
+    <string name="btn_clear">Xóa hết</string>
+
+    <string name="intro">Giới thiệu</string>
+    <string name="register">Đăng ký bản quyền</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_save">Save</string>
+
+    <string name="lblSetting">Cài đặt</string>
+    <string name="lblMin">Nhỏ nhất</string>
+    <string name="lblMax">Lớn nhất</string>
+
+    <string name="do_you_want_reset_vi">Bạn có chắc chắn muốn reset?</string>
+</resources>

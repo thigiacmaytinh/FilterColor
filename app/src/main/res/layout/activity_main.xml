@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thigiacmaytinh.trackingcolor.MainActivity"
+    android:id="@+id/mainview">
+
+    <com.thigiacmaytinh.trackingcolor.CameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/surface_view" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnFlash"
+        android:src="@drawable/noflash256"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:background="@drawable/modern_button"
+        android:onClick="btnFlash_onClick"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSetting"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/settingicon"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:onClick="btnSetting_onClick"
+        android:background="@null"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:background="#ff0000" />
+
+
+</RelativeLayout>

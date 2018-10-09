@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thigiacmaytinh.trackingcolor.MainActivity"
+    android:background="#00ffffff">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#00ffffff"
+        android:id="@+id/headerSetting" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/btnBack"
+            android:onClick="btnBack_onClick"
+            android:background="@drawable/modern_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scaleType="fitCenter"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/textButtonWhite"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lblSetting"
+            android:textStyle="bold"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnBack"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:layout_below="@+id/headerSetting"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="H"
+            android:id="@+id/lblHmin"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/textColorBlack"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hMin"
+            android:max="255"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/lblHmin"
+            android:layout_toEndOf="@+id/lblHmin" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="S"
+            android:id="@+id/lblMax"
+            android:textColor="@color/textColorBlack"
+            android:layout_below="@+id/lblHmin"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sMin"
+            android:max="255"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/lblMax"
+            android:layout_toEndOf="@+id/lblHmin" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="V"
+            android:id="@+id/lblVvalue"
+            android:textColor="@color/textColorBlack"
+            android:layout_below="@+id/lblMax"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vMin"
+            android:max="255"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/lblVvalue"
+            android:layout_toEndOf="@+id/lblHmin" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hMax"
+            android:max="255"
+            android:progress="255"
+            android:indeterminate="false"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/hMin"
+            android:layout_toEndOf="@+id/hMin" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sMax"
+            android:max="255"
+            android:progress="255"
+            android:indeterminate="false"
+            android:layout_alignTop="@+id/sMin"
+            android:layout_alignStart="@+id/hMax" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vMax"
+            android:max="255"
+            android:progress="255"
+            android:indeterminate="false"
+            android:layout_alignTop="@+id/vMin"
+            android:layout_alignStart="@+id/sMax" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/lblValue"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/vMax" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnReset"
+            android:layout_alignTop="@+id/lblValue"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:onClick="btnReset_onClick"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
