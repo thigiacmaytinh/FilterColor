@@ -38,6 +38,7 @@
 #else
 	#define WRITE_IMAGE(img, ...)
 	#define DEBUG_IMAGE(img, ...)
+	#define WRITE_IMAGE_ASYNC(img, ...)
 #endif
 void PrintFPS(cv::Mat& img);
 #define PRINT_FPS PrintFPS
@@ -84,3 +85,26 @@ void PrintFPS(cv::Mat& img);
 #define UNDEFINED_COLOR cv::Scalar(-1,-1,-1)
 
 #define MAX_PATH    260
+
+#define KEY_ESC 27
+#define KEY_SPACE 32
+#define KEY_ENTER 13
+#define KEY_DELETE 3014656
+#define KEY_INSERT 2949120
+#define KEY_HOME 2359296
+#define KEY_END 2293760
+#define KEY_PAGE_UP 2162688
+#define KEY_PAGE_DOWN 2228224
+#define KEY_UP 2490368
+#define KEY_LEFT 2424832
+#define KEY_DOWN 2621440
+#define KEY_RIGHT 2555904
+#define KEY_F1 7340032
+#define KEY_F2 7405568
+#define KEY_F3 7471104
+
+#if CV_MAJOR_VERSION == 3 && CV_VERSION_MINOR == 4 && CV_VERSION_REVISION == 2
+#define OPENCV_342
+#elif CV_MAJOR_VERSION == 3 && CV_VERSION_MINOR == 2 && CV_VERSION_REVISION == 0
+#define OPENCV_320 
+#endif

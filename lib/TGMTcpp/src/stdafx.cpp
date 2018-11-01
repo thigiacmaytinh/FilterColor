@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#ifdef WIN32
+#if defined(WIN32) || defined(WIN64)
 #include <windows.h>
 #include <time.h>
 #endif
@@ -13,7 +13,7 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void OnEvent(int event, int x, int y, int flags, void* userdata)
+void OnMouseEvent(int event, int x, int y, int flags, void* userdata)
 {
 	switch (event)
 	{
@@ -58,9 +58,6 @@ void ShowImage(cv::Mat img, const char* fmt, ...)
 	va_start(arg_list, fmt);
 	vsnprintf(str, DEBUG_OUT_BUFFER_SIZE - 1, fmt, arg_list);
 #endif
-	cv::namedWindow(str);
-
-	cv::setMouseCallback(str, OnEvent, NULL);
 	cv::imshow(str, img);
 
 }
