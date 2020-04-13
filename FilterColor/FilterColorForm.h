@@ -330,7 +330,7 @@ namespace TGMT {
 			// 
 			this->numHmin->Location = System::Drawing::Point(560, 55);
 			this->numHmin->Margin = System::Windows::Forms::Padding(2);
-			this->numHmin->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 179, 0, 0, 0 });
+			this->numHmin->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 255, 0, 0, 0 });
 			this->numHmin->Name = L"numHmin";
 			this->numHmin->Size = System::Drawing::Size(38, 20);
 			this->numHmin->TabIndex = 24;
@@ -340,11 +340,11 @@ namespace TGMT {
 			// 
 			this->numHmax->Location = System::Drawing::Point(560, 92);
 			this->numHmax->Margin = System::Windows::Forms::Padding(2);
-			this->numHmax->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 179, 0, 0, 0 });
+			this->numHmax->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 255, 0, 0, 0 });
 			this->numHmax->Name = L"numHmax";
 			this->numHmax->Size = System::Drawing::Size(38, 20);
 			this->numHmax->TabIndex = 25;
-			this->numHmax->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 179, 0, 0, 0 });
+			this->numHmax->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 255, 0, 0, 0 });
 			this->numHmax->ValueChanged += gcnew System::EventHandler(this, &FilterColorForm::numHmax_ValueChanged);
 			// 
 			// numSmin
